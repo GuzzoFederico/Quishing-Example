@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <head>
    <title>Quishing</title>
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-   <div class="glitch">
-      <h1>⚠ ACCESSO NON SICURO RILEVATO</h1>
+   <div id="fase1">
+      <div>
+         <div class="warning-title"><i class="fa-solid fa-triangle-exclamation"></i> ACCESSO NON SICURO RILEVATO</div>
+         <div class="warning-sub">SECURITY BREACH DETECTED — ACQUIRING DATA</div>
+      </div>
+      <div class="terminal">
+         <div id="log-output"></div>
+      </div>
+      <div class="progress-wrap">
+         <div class="progress-labels">
+            <span>ACQUISIZIONE DATI PERSONALI</span>
+            <span id="pct-label">0%</span>
+         </div>
+         <div class="progress-bg">
+            <div id="prog-fill"></div>
+         </div>
+      </div>
    </div>
+   <div id="fase2">
+      <div class="reveal-wrap">
+         <div class="reveal-badge"><i class="fa-solid fa-check"></i> DEMO DIDATTICA — CYBERSECURITY AWARENESS</div>
+         <div class="reveal-title">NESSUNA FUGA DI DATI</div>
+         <div class="reveal-sub">Quello che hai appena visto era una simulazione educativa</div>
+         <div class="cards">
+            <div class="card">
+               <div class="card-icon"><i class="fa-solid fa-laptop"></i></div>
+               <div class="card-title">NESSUN MALWARE</div>
+               <div class="card-text">Nessun file scaricato. I "log di acquisizione" erano <strong>testo generato localmente</strong> nel browser, nessuna operazione reale sul tuo dispositivo.</div>
+            </div>
+            <div class="card">
+               <div class="card-icon"><i class="fa-solid fa-masks-theater"></i></div>
+               <div class="card-title">TECNICHE REALI</div>
+               <div class="card-text">I veri attacchi <strong>phishing e quishing</strong> usano esattamente questo schema: farti agire d'impulso.</div>
+            </div>
+            <div class="card">
+               <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+               <div class="card-title">INGEGNERIA SOCIALE</div>
+               <div class="card-text">L'obiettivo è <strong>farti cliccare prima di pensare</strong>. Schermate simili appaiono in email, QR code falsi e popup malevoli.</div>
+            </div>
+         </div>
+         <div class="tips">
+            <h3><i class="fa-solid fa-user-shield"></i> COME DIFENDERSI</h3>
+            <div class="tip"><i class="fa-solid fa-caret-right"></i><strong>Fermati e respira</strong> Le pagine che creano panico improvviso sono quasi sempre false.</div>
+            <div class="tip"><i class="fa-solid fa-caret-right"></i><strong>Controlla sempre l'URL</strong> Verifica la validità delle informazioni fornite.</div>
+            <div class="tip"><i class="fa-solid fa-caret-right"></i><strong>Non agire d'impulso</strong> Se ti risulta sospetto non scansionare il QR, ignoralo.</div>
+            <div class="tip"><i class="fa-solid fa-caret-right"></i><strong>Attenzione ai QR code (quishing)</strong> Un QR porta ovunque, scansionali solo da fonti fidate.</div>
+         </div>
+         <div class="footer">
+            Questa pagina è una <span>demo educativa</span> sulla sicurezza informatica. Non raccoglie, trasmette
+            o conserva alcun dato. Questo sito dimostra l'importanza del <b>Quishing</b>, un'attacco informatico
+            che sta diventando sempre più popolare negl'ultimi anni data la facilità nel far scansionare il QR con un link malevole alla vittima.
+         </div>
+      </div>
+   </div>
+   <script type="module" src="app.js"></script>
 </body>
 </html>
