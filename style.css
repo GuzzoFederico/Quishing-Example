@@ -6,7 +6,6 @@
 }
 
 * {
-	zoom: 110%;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -40,6 +39,7 @@ body::after {
 }
 
 #fase1 {
+	zoom: 200%;
 	position: fixed;
 	inset: 0;
 	display: flex;
@@ -180,6 +180,7 @@ body::after {
 }
 
 #fase2 {
+	zoom: 200%;
 	position: fixed;
 	inset: 0;
 	display: none;
